@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+
+body {
+    font-family: monospace;
+    color: #fff;
+    background-color: #24292F;
+}
+
+main h2 {
+    font-size: 30px;
+    color: #DBFAE3;
+    text-transform: uppercase;
+    text-align: left;
+    text-decoration:
+}
+
+section div p {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+li {
+    list-style-position: outside;
+}
+
+.status li {
+    list-style-type: none;
+    margin: 5px;
+    padding: 10px;
+    text-indent: 10px;
+    letter-spacing: -3px;
+    word-spacing: -1px;
+    font-size: 14px;
+}
+
+.git-commands {
+    text-align: left;
+}
+
+header {
+    text-align: center;
+    font-size: x-large;
+}

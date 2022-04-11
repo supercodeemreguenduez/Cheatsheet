@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheatsheet</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1> LITTLE GIT CHEATSHEET</h1>
+        <img src="" alt="">
+    </header>
+    <main>
+        <sectionn>
+            <h2>Überschrift</h2>
+            <!-- <img src="assets/img/Bildschirmfoto 2022-04-11 um 13.09.13.png" alt="Hauptbereiche"> -->
+            <li>Lokal = Working Directory → Änderungen werden als Modified dargestellt</li>
+            <li>Staged Area = Index → Daten werden für den commit vorgemerkt sind aber noch nicht hochgeladen</li>
+            <li>.git directory repository → Daten sind von lokal auf git geklont worden und stehen als snapshot bereit
+            </li>
+            <li>Branching/Merge </li>
+            </section>
+
+            <section class="git-commands">
+                <h2>Git Commands</h2>
+                <div>
+                    <p>git init</p>
+                    <li>initialisiert ein lokales git repository </li>
+                </div>
+                <div>
+                    <p>git add . </p>
+                    <li>gibt an was alles in den commit rein soll ( . gibt an das alles in den commit sol)
+                    </li>
+                </div>
+                <div>
+                    <p>git commit -m “message”
+                    </p>
+                    <li>hinterlegt einen message/commit ( man kann auch sagen erlegt eine version an)
+                    </li>
+                </div>
+                <div>
+                    <p>git init</p>
+                    <li>initialisiert ein lokales git repository </li>
+                </div>
+                <div>
+                    <p>git push</p>
+                    <li>schickt das lokale repository in das github repository</li>
+                </div>
+                <div>
+                    <p>git log
+                    </p>
+                    <li>zeigt alle die bis dato erstellten commits ausführlich an
+                    </li>
+                </div>
+                <div>
+                    <p>git log --oneline
+                    </p>
+                    <li>zeigt alle die bis dato erstellten commits in kurzform an
+                    </li>
+                </div>
+                <div>
+                    <p>git branch “name”
+                    </p>
+                    <li>Erstellt einen neuen Branch
+                    </li>
+                </div>
+                <div>
+                    <p>git branch -a
+                    </p>
+                    <li>Zeigt alle erstellten Branches an
+                    </li>
+                </div>
+                <div>
+                    <p>git branch -d “name”
+                    </p>
+                    <li>Löscht den ausgewählten Branch
+                    </li>
+                </div>
+                <div>
+                    <p>git checkout
+                    </p>
+                    <li>Wechseln zwischen den Branches
+                    </li>
+                </div>
+                <div>
+                    <p>git pull
+                    </p>
+                    <li>Lädt die aktuelle Version des Repository von GitHub runter
+                    </li>
+                </div>
+                <div>
+                    <p>git clone
+                    </p>
+                    <li>Kopiert ein fremdes Projekt von Github
+                    </li>
+                </div>
+                <div>
+                    <p>git merge
+                    </p>
+                    <li>Ist dafür da um zwei branches zusammenzuführen
+                    </li>
+                </div>
+            </section>
+
+            <section class="status">
+                <h2>Status</h2>
+                <li>A - Added (This is a new file that has been added to the repository)</li>
+                <li>M - Modified (An existing file has been changed)</li>
+                <li>D - Deleted (a file has been deleted)</li>
+                <li>U - Untracked (The file is new or has been changed but has not been added to the repository yet)
+                </li>
+                <li>C - Conflict (There is a conflict in the file)</li>
+                <li>R - Renamed (The file has been renamed)</li>
+                <li>S - Submodule (In repository exists another subrepository)</li>
+            </section>
+    </main>
+
+</body>
+
+</html>
