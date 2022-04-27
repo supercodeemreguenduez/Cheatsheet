@@ -11,23 +11,37 @@
 
 <body>
     <header>
-        <h1> LITTLE GIT CHEATSHEET</h1>
-        <img src="" alt="">
+        <img src="assets/img/github-icon.png">
+        <h1> LITTLE</h1>
+        <h1>CHEAT SHEET</h1>
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
-    <main>
-        <sectionn>
-            <h2>Überschrift</h2>
-            <!-- <img src="assets/img/Bildschirmfoto 2022-04-11 um 13.09.13.png" alt="Hauptbereiche"> -->
-            <li>Lokal = Working Directory → Änderungen werden als Modified dargestellt</li>
-            <li>Staged Area = Index → Daten werden für den commit vorgemerkt sind aber noch nicht hochgeladen</li>
-            <li>.git directory repository → Daten sind von lokal auf git geklont worden und stehen als snapshot bereit
-            </li>
-            <li>Branching/Merge </li>
-            </section>
 
-            <section class="git-commands">
+    <main>
+
+        <section>
+
+            <div class="git-konzept">
+                <h2>Git Konzept</h2>
+                <li>Lokal = Working Directory → Änderungen werden als Modified dargestellt</li>
+                <li>Staged Area = Index → Daten werden für den commit vorgemerkt sind aber noch nicht hochgeladen</li>
+                <li>.git directory repository → Daten sind von lokal auf git geklont worden und stehen als snapshot
+                    bereit</li>
+                <li>Branching/Merge </li>
+            </div>
+            <div>
+                <img src="assets/img/Bildschirmfoto 2022-04-11 um 21.31.36.png" alt="Git Branches">
+                <img src="assets/img/Bildschirmfoto 2022-04-11 um 21.29.32.png" alt="GitHub/Git">
+            </div>
+        </section>
+        <section class="git-commands">
+            <article>
                 <h2>Git Commands</h2>
-                <div>
+                <div class="command-left">
                     <p>git init</p>
                     <li>initialisiert ein lokales git repository </li>
                 </div>
@@ -36,7 +50,7 @@
                     <li>gibt an was alles in den commit rein soll ( . gibt an das alles in den commit sol)
                     </li>
                 </div>
-                <div>
+                <div class="command-left">
                     <p>git commit -m “message”
                     </p>
                     <li>hinterlegt einen message/commit ( man kann auch sagen erlegt eine version an)
@@ -46,7 +60,7 @@
                     <p>git init</p>
                     <li>initialisiert ein lokales git repository </li>
                 </div>
-                <div>
+                <div class="command-left">
                     <p>git push</p>
                     <li>schickt das lokale repository in das github repository</li>
                 </div>
@@ -56,7 +70,7 @@
                     <li>zeigt alle die bis dato erstellten commits ausführlich an
                     </li>
                 </div>
-                <div>
+                <div class="command-left">
                     <p>git log --oneline
                     </p>
                     <li>zeigt alle die bis dato erstellten commits in kurzform an
@@ -68,7 +82,7 @@
                     <li>Erstellt einen neuen Branch
                     </li>
                 </div>
-                <div>
+                <div class="command-left">
                     <p>git branch -a
                     </p>
                     <li>Zeigt alle erstellten Branches an
@@ -80,7 +94,7 @@
                     <li>Löscht den ausgewählten Branch
                     </li>
                 </div>
-                <div>
+                <div class="command-left">
                     <p>git checkout
                     </p>
                     <li>Wechseln zwischen den Branches
@@ -92,7 +106,7 @@
                     <li>Lädt die aktuelle Version des Repository von GitHub runter
                     </li>
                 </div>
-                <div>
+                <div class="command-left">
                     <p>git clone
                     </p>
                     <li>Kopiert ein fremdes Projekt von Github
@@ -104,19 +118,41 @@
                     <li>Ist dafür da um zwei branches zusammenzuführen
                     </li>
                 </div>
-            </section>
+            </article>
+        </section>
+        <section class="status">
+            <h2>Status</h2>
+            <li>A - Added (This is a new file that has been added to the repository)</li>
+            <li>M - Modified (An existing file has been changed)</li>
+            <li>D - Deleted (a file has been deleted)</li>
+            <li>U - Untracked (The file is new or has been changed but
+                has not been added to the repository yet)</li>
+            <li>C - Conflict (There is a conflict in the file)</li>
+            <li>R - Renamed (The file has been renamed)</li>
+            <li>S - Submodule (In repository exists another subrepository)</li>
+        </section>
 
-            <section class="status">
-                <h2>Status</h2>
-                <li>A - Added (This is a new file that has been added to the repository)</li>
-                <li>M - Modified (An existing file has been changed)</li>
-                <li>D - Deleted (a file has been deleted)</li>
-                <li>U - Untracked (The file is new or has been changed but has not been added to the repository yet)
-                </li>
-                <li>C - Conflict (There is a conflict in the file)</li>
-                <li>R - Renamed (The file has been renamed)</li>
-                <li>S - Submodule (In repository exists another subrepository)</li>
-            </section>
+        <section calss="Shell">
+
+            <h2>Datei und Verzeichnis Befehle</h2>
+            <h3>Befehl - Beschreibung </h3>
+            <div>
+                <li>"touch" - Erstellt eine Dateien</li>
+                <li>"mkdir" - Erstellt ein Verzeichnis</li>
+                <li>"ls" - Auflistung von Verzeichnissen (Inhalt eines Verzeichnis anzeigen)</li>
+                <li>"ls -e" - Detailierte Auflistung über alle Dateien im Verzeichnis</li>
+                <li>"ls -a" - Zeigt alle versteckten Dateien an</li>
+                <li>"cp" - Eine Datei oder Verzeichnis kopieren</li>
+                <li>"cd" - Verzeichnis wechseln</li>
+                <li>"mv +Dateiname +Dateipfad" - Eine Datei verschieben</li>
+                <li>"mv +Dateipfad Dateipfad mit neuem Namen" - Eine Datei umbenennen</li>
+                <li>"pwd" - Zeigt das aktuelle Arbeitsverzeichnis an</li>
+                <li>"cd .." - In das vorherige Verzeichnis zurück wechseln</li>
+                <li>"../" - ??? eine Ebene zurück??</li>
+                <li>"cat + Dateinamen" - Zeigt den gesamten Inhalt der Datei im Terminal an</li>
+                <li>"clear" - Den Bildschirm der Konsole leeren</li>
+            </div>
+        </section>
     </main>
 
 </body>
